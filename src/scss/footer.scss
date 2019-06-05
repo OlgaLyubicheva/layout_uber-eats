@@ -1,0 +1,142 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+  background-color: $dark-background;
+  color: $light-theme-color;
+
+  &--content {
+    width: 100%;
+    max-width: $maxwidth;
+    padding: 0 6px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 116px;
+    border-bottom: 1px solid $light-theme-color;
+  }
+
+  &__info-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-start;
+    box-sizing: border-box;
+    height: 220px;
+    border-bottom: 1px solid $light-theme-color;
+    padding-top: 32px;
+
+    &--language {
+      width: 227px;
+      height: 40px;
+      padding-left: 48px;
+      border-width: 0;
+      background: #3b3b3b url(images/world.svg) 16px center no-repeat;
+      font-family: $general-font;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: $light-theme-color;
+    }
+
+    &--social {
+      width: 227px;
+      padding: 17px 0;
+      border-width: 0;
+      margin-top: 33px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &--social legend>span {
+      color: #49A144;
+    }
+
+    &--social a {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      padding: 0 1px;
+    }
+
+    .ico-facebk {
+      background: url(images/facebook.svg) center no-repeat;
+    }
+
+    .ico-twit {
+      background: url(images/twitter.svg) center no-repeat;
+    }
+
+    .ico-inst {
+      background: url(images/instagram.svg) center no-repeat;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul>li {
+      margin-bottom: 23px;
+    }
+
+    ul a {
+      font-family: $general-font;
+      font-size: 13px;
+      line-height: 15px;
+      color: $light-theme-color;
+      text-decoration: none;
+    }
+  }
+
+  &__download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid $light-theme-color;
+
+    & a {
+      display: inline-block;
+      width: 135px;
+      height: 40px;
+      margin: 20px;
+    }
+
+    &--app-store {
+      background: url(images/Download_App_Store.png) center no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &--google-play {
+      background: url(images/Download_google_play.png) center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 93px;
+    font-size: 11px;
+    line-height: 13px;
+
+    a {
+      font-family: $general-font;
+      color: $light-theme-color;
+      font-size: 11px;
+      line-height: 13px;
+      text-decoration: none;
+    }
+  }
+
+  .button-to-up {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    background: #59BD5A url(images/btn-up.png) center no-repeat;
+  }
+}
