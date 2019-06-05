@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d;
+}
+
+.logo-uber img {
+  width: 100%;
+}
+
+/* Header */
+.major-header {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  padding: 0 6px;
+}
+.major-header--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 100%;
+  max-width: 962px;
+}
+.major-header__location {
+  display: flex;
+  margin: 0 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+.major-header__location label {
+  padding: 9px;
+}
+.major-header__location input {
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.major-header__location--when {
+  width: 20%;
+  text-align: center;
+}
+.major-header__location--to {
+  width: 80%;
+  padding-left: 36px;
+  background: url(images/location.svg) 12px no-repeat;
+  background-size: 14px auto;
+}
+.major-header__reg {
+  display: flex;
+}
+.major-header__reg--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.major-header__reg--sing-in {
+  border: 1px solid #E0E0E0;
+  color: #1d1d1d;
+}
+.major-header__reg--sing-in:hover {
+  border: 1px solid #262626;
+  color: #fff;
+  background-color: #262626;
+}
+.major-header__reg--registr {
+  margin-left: 16px;
+  color: #fff;
+  background: #262626;
+}
+.major-header__reg--registr:hover {
+  color: #1d1d1d;
+  background: #fff;
+  border: 1px solid #E0E0E0;
+}
+.major-header__basket {
+  width: 40px;
+  margin: 0 6px 0 16px;
+  background: url(images/basket.svg) center no-repeat;
+}
+
+/*Main content*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 962px;
+  padding: 0 6px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.main__search {
+  width: 100%;
+  height: 48px;
+  padding: 0 0 7px 30px;
+  margin: 32px 0 56px;
+  border-width: 0 0 1px;
+  background: url(images/search.svg) 0 8px no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main__location {
+  display: none;
+}
+.main h2 {
+  align-self: flex-start;
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  width: 100%;
+}
+
+.infocard {
+  display: block;
+  height: 366px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.infocard img {
+  width: 100%;
+  height: 256px;
+}
+.infocard__name {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 12px;
+}
+.infocard__ability {
+  font-size: 14px;
+  line-height: 25px;
+  color: #626262;
+}
+.infocard__time {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+  background-color: #262626;
+  color: #fff;
+}
+.footer--content {
+  width: 100%;
+  max-width: 962px;
+  padding: 0 6px;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  height: 116px;
+  border-bottom: 1px solid #fff;
+}
+.footer__info-about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-start;
+  box-sizing: border-box;
+  height: 220px;
+  border-bottom: 1px solid #fff;
+  padding-top: 32px;
+}
+.footer__info-about--language {
+  width: 227px;
+  height: 40px;
+  padding-left: 48px;
+  border-width: 0;
+  background: #3b3b3b url(images/world.svg) 16px center no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer__info-about--social {
+  width: 227px;
+  padding: 17px 0;
+  border-width: 0;
+  margin-top: 33px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__info-about--social legend > span {
+  color: #49A144;
+}
+.footer__info-about--social a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 0 1px;
+}
+.footer__info-about .ico-facebk {
+  background: url(images/facebook.svg) center no-repeat;
+}
+.footer__info-about .ico-twit {
+  background: url(images/twitter.svg) center no-repeat;
+}
+.footer__info-about .ico-inst {
+  background: url(images/instagram.svg) center no-repeat;
+}
+.footer__info-about ul {
+  list-style: none;
+}
+.footer__info-about ul > li {
+  margin-bottom: 23px;
+}
+.footer__info-about ul a {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer__download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid #fff;
+}
+.footer__download a {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  margin: 20px;
+}
+.footer__download--app-store {
+  background: url(images/Download_App_Store.png) center no-repeat;
+  background-size: 100% 100%;
+}
+.footer__download--google-play {
+  background: url(images/Download_google_play.png) center no-repeat;
+  background-size: 100% 100%;
+}
+.footer__bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 93px;
+  font-size: 11px;
+  line-height: 13px;
+}
+.footer__bottom a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+  text-decoration: none;
+}
+.footer .button-to-up {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  background: #59BD5A url(images/btn-up.png) center no-repeat;
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .major-header--content {
+    max-width: 320px;
+  }
+  .major-header .logo-uber {
+    width: 30%;
+  }
+  .major-header__location {
+    display: none;
+  }
+  .major-header__reg--button {
+    width: 72px;
+  }
+  .major-header__basket {
+    display: none;
+  }
+
+  .main {
+    max-width: 320px;
+  }
+  .main__search {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .main__location {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: auto;
+    grid-gap: 8px 16px;
+    margin-bottom: 40px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .main__location input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #1d1d1d;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .main__location--when {
+    text-align: center;
+  }
+  .main__location--to {
+    padding-left: 36px;
+    background: url(images/location.svg) 12px no-repeat;
+    background-size: 14px auto;
+  }
+
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  .footer--content {
+    max-width: 320px;
+  }
+
+  .footer__info-about {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    height: 492px;
+  }
+  .footer__info-about--language {
+    width: 173px;
+  }
+
+  .footer__download {
+    height: 84px;
+  }
+  .footer__download a {
+    width: 109px;
+    height: 36px;
+    margin: 20px;
+  }
+
+  .footer__bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    height: 167px;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .major-header--content {
+    max-width: 768px;
+  }
+  .major-header .logo-uber {
+    width: 18%;
+  }
+  .major-header__location {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .major-header__location input {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .major-header__location--when {
+    max-width: 57px;
+  }
+  .major-header__location--to {
+    max-width: 215px;
+  }
+
+  .main {
+    max-width: 768px;
+  }
+
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer--content {
+    max-width: 768px;
+  }
+
+  .footer__info-about--language {
+    width: 176px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

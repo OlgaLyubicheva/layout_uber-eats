@@ -1,0 +1,100 @@
+.major-header {
+  display: flex;
+  justify-content: center;
+  background: $light-theme-color;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  padding: 0 6px;
+  
+    &--content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      width: 100%;
+      max-width: $maxwidth;
+      
+    }
+
+    &__location {
+      display: flex;
+      margin: 0 16px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: $medium-font-color;
+
+      label {
+        padding: 9px;
+      }
+    }
+
+    &__location input {
+      height: 40px;
+      border: 1px solid #e0e0e0;
+      box-sizing: border-box;
+      border-radius: 2px;
+      color: $general-font-color;
+      font-family: $general-font;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__location--when {
+      width: 20%;
+      text-align: center;
+    }
+
+    &__location--to {
+      width: 80%;
+      padding-left: 36px;
+      background: url(images/location.svg) 12px  no-repeat;
+      background-size: 14px auto;
+    }
+
+    &__reg {
+      display: flex;
+    }
+
+    &__reg--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 40px;
+      box-sizing: border-box;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 24px;
+      text-decoration: none;  
+    }
+
+    &__reg--sing-in {
+      border: 1px solid #E0E0E0;
+      color: $general-font-color;
+    }
+
+    &__reg--sing-in:hover {
+      border: 1px solid $dark-background;
+      color: $light-theme-color;
+      background-color: $dark-background;
+    }
+
+    &__reg--registr {
+      margin-left: 16px;
+      color: $light-theme-color;
+      background: $dark-background;
+    }
+
+    &__reg--registr:hover {
+      color: $general-font-color;
+      background: $light-theme-color;
+      border: 1px solid #E0E0E0;
+    }
+
+    &__basket {
+      width: 40px;
+      margin: 0 6px 0 16px;
+      background: url(images/basket.svg) center no-repeat;
+    }
+}
