@@ -22,10 +22,10 @@
       font-size: 16px;
       line-height: 26px;
       color: $medium-font-color;
+    }
 
-      label {
-        padding: 6px;
-      }
+    &__location label {
+      padding: 6px;
     }
 
     &__location input {

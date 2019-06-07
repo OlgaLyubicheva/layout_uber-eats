@@ -223,15 +223,6 @@ body {
   height: 24px;
   padding: 0 1px;
 }
-.footer__info-about .ico-facebk {
-  background: url(images/facebook.svg) center no-repeat;
-}
-.footer__info-about .ico-twit {
-  background: url(images/twitter.svg) center no-repeat;
-}
-.footer__info-about .ico-inst {
-  background: url(images/instagram.svg) center no-repeat;
-}
 .footer__info-about ul {
   list-style: none;
 }
@@ -281,7 +272,20 @@ body {
   line-height: 13px;
   text-decoration: none;
 }
-.footer .button-to-up {
+
+.ico-facebk {
+  background: url(images/facebook.svg) center no-repeat;
+}
+
+.ico-twit {
+  background: url(images/twitter.svg) center no-repeat;
+}
+
+.ico-inst {
+  background: url(images/instagram.svg) center no-repeat;
+}
+
+.button-to-up {
   position: absolute;
   bottom: 20px;
   right: 15px;
