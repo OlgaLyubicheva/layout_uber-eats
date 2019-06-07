@@ -2,6 +2,7 @@ $general-font: "Roboto", sans-serif;
 $general-font-color: #1d1d1d;
 $medium-font-color: #626262;
 $dark-background: #262626;
+$light-border-background: #e0e0e0;
 $light-theme-color: #fff;
 $maxwidth: 962px;
 
@@ -29,6 +30,7 @@ body {
 /* Footer */
 @import "./scss/footer.scss";
 
+/*Adapting*/
 @media (min-width: 320px) and (max-width: 639px) {
   $maxwidth: 320px;
   .major-header {
@@ -61,20 +63,19 @@ body {
       margin-bottom: 24px;
     }
     
-      &__location {
+    &__location {
       display: grid;
       grid-template-columns: 1fr 3fr;
       grid-auto-rows: auto;
       grid-gap: 8px 16px;
       margin-bottom: 40px;
       font-size: 11px;
-      line-height: 13px;
     }
 
     &__location input {
       height: 40px;
       width: 100%;
-      border: 1px solid #e0e0e0;
+      border: 1px solid $light-border-background;
       box-sizing: border-box;
       border-radius: 2px;
       color: $general-font-color;
@@ -85,10 +86,11 @@ body {
 
     &__location--when {
       text-align: center;
+      padding: 0 6px;
     }
 
     &__location--to {
-      padding-left: 36px;
+      padding: 0 6px 0 36px;
       background: url(images/location.svg) 12px  no-repeat;
       background-size: 14px auto;
     }
@@ -130,6 +132,7 @@ body {
   }
 }
 
+
 @media (min-width: 640px) and (max-width: 1023px) {
   $maxwidth: 768px;
   .major-header {
@@ -143,12 +146,10 @@ body {
 
     &__location {
       font-size: 13px;
-      line-height: 24px;
     }
 
     &__location input {
       font-size: 13px;
-      line-height: 24px;
     }
 
     &__location--when {
@@ -157,6 +158,11 @@ body {
 
     &__location--to {
       max-width: 215px;
+    }
+
+    &__basket {
+      width: 30px;
+      margin: 0 6px 0 12px;
     }
   }
 
