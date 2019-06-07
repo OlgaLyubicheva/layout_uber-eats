@@ -33,6 +33,7 @@ body {
 /*Adapting*/
 @media (min-width: 320px) and (max-width: 639px) {
   $maxwidth: 320px;
+
   .major-header {
     &--content {
       max-width: $maxwidth;
@@ -135,6 +136,7 @@ body {
 
 @media (min-width: 640px) and (max-width: 1023px) {
   $maxwidth: 768px;
+  
   .major-header {
     &--content {
       max-width: $maxwidth;
