@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Uber Eats</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
@@ -11,15 +12,15 @@
   <header class="major-header">
     <div class="major-header--content">
       <a href="#" class="logo-uber">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="uber eats">
       </a>
-      <div class="major-header__location">
+      <form action="" class="major-header__location">
         <input type="text" class="major-header__location--when" name="head when" value="ASAP">
 
         <label for="header-to-adress">to</label>
         <input type="text" class="major-header__location--to" name="head to" id="header-to-adress" value="ul. Tarasivska St. 16">
          
-      </div>
+      </form>
     
       <div class="major-header__reg">
         <a href="#" class="major-header__reg--button major-header__reg--sing-in">Sing in</a>
@@ -31,14 +32,16 @@
   </header>
 
   <main class="main">
-    <input type="search" class="main__search" name="main-search" placeholder="Search for restaurant or cuisine">
+    <form action="" class="main__form-search">
+      <input type="search" class="main__search" name="main-search" placeholder="Search for restaurant or cuisine">
+    </form>
 
-    <div class="main__location">
+    <form action="" class="main__location">
       <label for="main-when">When:</label>
       <label for="main-to-adress">To:</label>  
       <input type="text" class="main__location--when" name="when" id="main-when" value="ASAP">
       <input type="text" class="main__location--to" name="to" id="main-to-adress" value="ul. Tarasivska St. 16"> 
-    </div>
+    </form>
 
     <h2>Kyiv Restaurants</h2>
 
@@ -98,7 +101,7 @@
   <footer class="footer">
     <div class="footer--content">
       <div class="footer__logo">
-        <a href="#" class="logo-uber">
+        <a href="#" class="logo-uber" aria-hidden="true">
           <img src="images/white-logo.svg" alt="">
         </a>
       </div>
@@ -111,12 +114,12 @@
             <option value="ru">Русский</option>
           </select>
 
-          <fieldset class="footer__info-about--social">
-            <legend><span>#</span>UberEats</legend>
-              <a href="#" class="ico-facebk"></a>
-              <a href="#" class="ico-twit"></a>
-              <a href="#" class="ico-inst"></a>
-          </fieldset>
+          <div class="footer__info-about--social">
+            <div class="tag-ubereats"><span>#</span>UberEats</div>
+            <a href="#" class="ico-facebk"></a>
+            <a href="#" class="ico-twit"></a>
+            <a href="#" class="ico-inst"></a>
+          </div>
         </div>
 
         <ul>
