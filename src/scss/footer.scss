@@ -43,15 +43,10 @@
 
   &__info-about--social {
     width: 227px;
-    padding: 17px 0;
     border-width: 0;
     margin-top: 33px;
     font-size: 16px;
     line-height: 19px;
-  }
-
-  &__info-about--social legend>span {
-    color: #49A144;
   }
 
   &__info-about--social a {
@@ -118,6 +113,14 @@
     line-height: 13px;
     text-decoration: none;
   }  
+}
+
+.tag-ubereats {
+  margin-bottom: 20px;
+
+  span {
+    color: #49A144;
+  }
 }
 
 .ico-facebk {
